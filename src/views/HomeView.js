@@ -13,6 +13,9 @@ export default function HomeView({ navigate, events }) {
     return () => window.removeEventListener("resize", update);
   }, []);
 
+  console.log("events =", events);
+  console.log("isArray =", Array.isArray(events));
+
   return (
     <div className="w-full">
       <section className="relative w-full h-[600px] flex items-center justify-center overflow-hidden">

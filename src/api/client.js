@@ -1,6 +1,11 @@
-const API_BASE = process.env.REACT_APP_API_URL || "/api";
+// const API_BASE = process.env.REACT_APP_API_URL || "/api";
+const API_BASE =
+  process.env.REACT_APP_API_URL ||
+  "https://smart-event-backend-4ik2.onrender.com/api";
 const TOKEN_KEY = "eventhub_token";
 const USER_KEY = "eventhub_user";
+
+console.log("API_BASE =", API_BASE);
 
 // ─── Token helpers ──────────────────────────────────────
 export function getToken() {
